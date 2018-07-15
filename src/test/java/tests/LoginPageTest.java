@@ -23,7 +23,7 @@ public class LoginPageTest
         System.out.println("Verify a user is able to login successfully.");
         _loginPage = new LoginPage(_driver, _wait);
         System.out.println("Logging into account with valid credentials.");
-        MainPage _mainPage = (MainPage)_loginPage.loginToAccount("hardikkumar.diyora@sophos.com", "Password@123.");
+        MainPage _mainPage = (MainPage)_loginPage.loginToAccount("QWERT@gmail.com", "Password@12");
         Assert.assertTrue(_mainPage.checkUpcomingProductSectionPresent());
         System.out.println("Log out from Account.");
         _mainPage.logOut();
@@ -48,7 +48,7 @@ public class LoginPageTest
         System.out.println("Verify a user is able to see error message on wrong credentials.");
         _loginPage = new LoginPage(_driver, _wait);
         System.out.println("Logging into account with invalid credentials.");
-        _loginPage.loginToAccount("hardikkumar.diyora@sophos.com", "Password@");
+        _loginPage.loginToAccount("QWERT@gmail.com", "Password@");
     }
 
     @Test
