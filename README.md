@@ -2,6 +2,7 @@
 # UIAutomation
 
 ### Basic example of Page object design pattern using JAVA, TestNG, Selenium etc.
+## NOTE : This is developed using specific example website's behaviours. 
 
 ## Steps:
 1. Clone the code.
